@@ -4,7 +4,11 @@ import { NextRequest, NextResponse } from 'next/server'
 // Example: await db.insert(waitlistTable).values({ email, createdAt: new Date() })
 
 function isValidEmail(email: string): boolean {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+  // Linear regex safe from ReDoS: validates basic local@domain.tld structure
+  const local = email.indexOf('@')
+  if (local < 1) return false
+  const domain = email.lastIndexOf('.')
+  return domain > local + 1 && domain < email.length - 1
 }
 
 export async function POST(request: NextRequest) {
