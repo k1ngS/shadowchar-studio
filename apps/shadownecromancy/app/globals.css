@@ -1,0 +1,125 @@
+/**
+ * SHADOWNECROMANCY — globals.css
+ * Tokens copiados de ../../brand/tokens/tokens.css
+ * Integrados como CSS variables nativas com Tailwind v4
+ */
+
+@import "tailwindcss";
+
+/* ─── Tailwind v4: theme via CSS variables ─── */
+@theme {
+  /* Backgrounds */
+  --color-bg-abyss:         #050507;
+  --color-surface-tomb:     #121215;
+  --color-surface-shadow:   #1E1E22;
+  --color-surface-elevated: #252529;
+
+  /* Typography */
+  --color-text-bone:  #E3DFD6;
+  --color-text-ash:   #8A8780;
+  --color-text-dust:  #3D3B38;
+
+  /* Accents */
+  --color-accent-flame:      #A82020;
+  --color-accent-flame-hover:#C42424;
+  --color-accent-flame-glow: rgba(168, 32, 32, 0.15);
+  --color-accent-brass:      #B38F5C;
+
+  /* UI borders */
+  --color-border-blade:  #26262B;
+  --color-border-subtle: #1A1A1E;
+
+  /* Semantic */
+  --color-success: #3D6B50;
+  --color-error:   #8C1A1A;
+  --color-warning: #B87333;
+
+  /* Fonts */
+  --font-display: 'Cinzel', serif;
+  --font-body:    'Inter', sans-serif;
+
+  /* Spacing (4px base) */
+  --spacing-1:  0.25rem;
+  --spacing-2:  0.5rem;
+  --spacing-3:  0.75rem;
+  --spacing-4:  1rem;
+  --spacing-6:  1.5rem;
+  --spacing-8:  2rem;
+  --spacing-12: 3rem;
+  --spacing-16: 4rem;
+  --spacing-20: 5rem;
+  --spacing-24: 6rem;
+
+  /* Radii */
+  --radius-sm:   2px;
+  --radius-base: 4px;
+  --radius-lg:   8px;
+
+  /* Transitions */
+  --ease-ritual: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ─── Base reset ─── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--color-bg-abyss);
+  color: var(--color-text-bone);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* ─── Skip link ─── */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 9999;
+  background: var(--color-accent-flame);
+  color: var(--color-text-bone);
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  border-radius: var(--radius-base);
+  transition: top 160ms var(--ease-ritual);
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+/* ─── Focus visible global ─── */
+:focus-visible {
+  outline: 2px solid var(--color-accent-flame);
+  outline-offset: 3px;
+}
