@@ -1,0 +1,72 @@
+/**
+ * SHADOWCHAR STUDIO — DESIGN TOKENS
+ * Marca-mãe: compartilhado entre todos os produtos
+ * Essência: "A sombra que mantém a chama da campanha acesa."
+ */
+
+:root {
+  /* Backgrounds */
+  --color-bg-abyss:          #050507;
+  --color-surface-tomb:      #121215;
+  --color-surface-shadow:    #1E1E22;
+  --color-surface-elevated:  #252529;
+
+  /* Typography */
+  --color-text-bone:         #E3DFD6;
+  --color-text-ash:          #8A8780;
+  --color-text-dust:         #3D3B38;
+
+  /* Accents */
+  --color-accent-flame:      #A82020;
+  --color-accent-flame-hover:#C42424;
+  --color-accent-flame-glow: rgba(168, 32, 32, 0.15);
+  --color-accent-brass:      #B38F5C;
+
+  /* UI */
+  --color-border-blade:      #26262B;
+  --color-border-subtle:     #1A1A1E;
+
+  /* Semantic */
+  --color-success:           #3D6B50;
+  --color-error:             #8C1A1A;
+  --color-warning:           #B87333;
+
+  /* Typography families */
+  --font-display:            'Cinzel', serif;
+  --font-body:               'Inter', sans-serif;
+
+  /* Typography scale */
+  --text-xs:    0.75rem;
+  --text-sm:    0.875rem;
+  --text-base:  1rem;
+  --text-lg:    1.125rem;
+  --text-xl:    1.5rem;
+  --text-2xl:   2rem;
+  --text-3xl:   3rem;
+
+  /* Font weights */
+  --font-weight-body:    400;
+  --font-weight-label:   500;
+  --font-weight-heading: 600;
+  --font-weight-hero:    700;
+
+  /* Spacing (4px base) */
+  --space-1:   0.25rem;
+  --space-2:   0.5rem;
+  --space-3:   0.75rem;
+  --space-4:   1rem;
+  --space-6:   1.5rem;
+  --space-8:   2rem;
+  --space-12:  3rem;
+  --space-16:  4rem;
+  --space-20:  5rem;
+  --space-24:  6rem;
+
+  /* Radii — afiados, dark fantasy */
+  --radius-sm:   2px;
+  --radius-base: 4px;
+  --radius-lg:   8px;
+
+  /* Transitions */
+  --transition-base: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+}
