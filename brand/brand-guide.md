@@ -207,11 +207,13 @@ CAMADA 3 — Motivo visual / textura do produto (expressão própria)
 | Dimensão             | Definição                                                  |
 | -------------------- | ---------------------------------------------------------- |
 | **Metáfora visual**  | Osso, ressurreição, ritual de retorno, o que foi enterrado |
-| **Acento cromático** | Verde putrefato / esmeralda escura — `#1A3D2B` a `#2E6B47` |
+| **Acento cromático** | Crimson — `#A82020` |
 | **Motivo**           | Mão emergindo, raízes quebrando solo, osso recomposto      |
 | **Textura**          | Terra, musgo, pedra velha, decadência nobre                |
 | **Arquétipo visual** | Necromante que não deixa histórias morrerem                |
 | **UI mood**          | Sombrio e lento — peso de algo que estava adormecido       |
+
+> **Nota:** O ShadowNecromancy é o produto principal do Shadowchar Studio — aquele que mais diretamente encarna a missão central da marca. Por isso, seu acento cromático herda o **Crimson `#A82020`** da marca-mãe em lugar de adotar uma cor de destaque própria. Essa decisão reforça o vínculo direto entre o produto e a identidade do estúdio, sinalizando ao usuário que este é o núcleo da experiência Shadowchar.
 
 ---
 
@@ -221,7 +223,7 @@ CAMADA 3 — Motivo visual / textura do produto (expressão própria)
 | ---------------------- | --------------------- | ---------------- | --------------------- | ------------------- |
 | **Cor de fundo**       | `#0D0D0D`             | `#0D0D0D`        | `#0D0D0D`             | `#0D0D0D`           |
 | **Cor de texto**       | `#F0EAD6`             | `#F0EAD6`        | `#F0EAD6`             | `#F0EAD6`           |
-| **Acento principal**   | `#C49A3C` (âmbar)     | `#2E7DA0` (azul) | `#A83232` (escarlate) | `#2E6B47` (verde)   |
+| **Acento principal**   | `#C49A3C` (âmbar)     | `#2E7DA0` (azul) | `#A83232` (escarlate) | `#A82020` (crimson) |
 | **Tipografia heading** | Cormorant Garamond    | Herda            | Herda                 | Herda               |
 | **Tipografia corpo**   | Inter / DM Sans       | Herda            | Herda                 | Herda               |
 | **Border-radius**      | 4–6px                 | Herda            | Herda                 | Herda               |
